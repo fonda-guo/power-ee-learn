@@ -44,7 +44,9 @@ H桥中PWM的特性：
 
 从开关图来看，$S_1$闭合的时候，$S_4, S_5$以同样SPWM形式开关取电；下半周期，$S_3$闭合的时候，$S_4, S_5$以SPWM形式开关取电。取一点电，就出现0电压。
 
-$H_5$的存在，更好的隔离了电源和负载，防止0电压时候出现不必要的能量交换。
+$H_5$的存在，更好的隔离了电源和负载，防止0电压时候出现不必要的能量交换。(仿真有待进一步调试)
 
-**Heric**(highly efficient and reliable inverter concept)
+**Heric**(highly efficient and reliable inverter concept)，添加了两个开关管，此时$S_1, S_3$没有同时闭合的时候，完全通过新加的两个开关管实现零输出电压，与H5一样实现隔离。(仿真有待进一步调试)
+
+**FBDC**(Full-Bridge Inverter with DC Bypass)，PPT仿真给的有问题。
 
