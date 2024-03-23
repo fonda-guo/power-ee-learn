@@ -46,7 +46,15 @@ H桥中PWM的特性：
 
 $H_5$的存在，更好的隔离了电源和负载，防止0电压时候出现不必要的能量交换。(仿真已调试完成)，$H_5$电流在上下边切换，为了得到好的波形，电感值取小，电容值取大，负载很小，具体原因有待进一步思考。
 
-**Heric**(highly efficient and reliable inverter concept)，添加了两个开关管，此时$S_1, S_3$没有同时闭合的时候，完全通过新加的两个开关管实现零输出电压，与H5一样实现隔离。(仿真有待进一步调试)
+**Heric**(highly efficient and reliable inverter concept)，添加了两个开关管，此时$S_1, S_3$没有同时闭合的时候，完全通过新加的两个开关管实现零输出电压，与H5一样实现隔离。(与H5一样，电流变化过慢，需要调低电感才能出sin波形，仿真有待进一步调试（调制尝试翻转和对称做差），具体问题有待深入思考)
 
-**FBDC**(Full-Bridge Inverter with DC Bypass)，PPT仿真给的有问题。
+**FBDC**(Full-Bridge Inverter with DC Bypass)，PPT仿真给有点对不上？零电压如何通过断开外部56，闭合H桥所有开关实现？
+
+**ZVFBR**、**Ultra Eta**有时间再补充，需要进一步理解相关知识。
+
+
+
+**NPC**（Neutral point clamped）中性点钳位，取一半电压输出；
+
+
 
